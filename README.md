@@ -1,2 +1,1 @@
-# icarus-web
-React web app
+icarus.gg
