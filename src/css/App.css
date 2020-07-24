@@ -15,7 +15,14 @@ hr {
 
 .App-header p,
 .centered p {
-  font-size: 14px;
+  font-size: 2vh;
+}
+
+@media ( min-height: 560px ) {
+  .App-header p,
+  .centered p {
+    font-size: 12px;
+  } 
 }
 
 .centered {
