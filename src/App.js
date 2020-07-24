@@ -1,7 +1,15 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
+import './css/App.css'
 
-const pngLogo = process.env.PUBLIC_URL + '/icarus.gg-500x500.png';
+import SocialIcons from './components/SocialIcons'
+
+const 
+  pub = process.env.PUBLIC_URL,
+  icon = `${pub}/social-icons`,
+  pngLogo = pub + '/icarus.gg-500x500.png',
+  icons = {
+    discord: `${icon}/discord.png` 
+  }
 
 function App() {
   return (
@@ -11,9 +19,17 @@ function App() {
         <p>
           hello friend
         </p>
+        
       </header>
+
+      <hr />
+
+      <div className="centered">
+        <SocialIcons />
+      </div>
+
     </div>
-  );
+  )
 } 
 
-export default App;
+export default App
