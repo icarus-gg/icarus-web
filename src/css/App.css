@@ -9,6 +9,10 @@ hr {
   border-bottom: none;
 }
 
+.clickable {
+  cursor: pointer;
+}
+
 .App-header p,
 .centered p {
   font-size: 14px;
