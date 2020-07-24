@@ -1,5 +1,5 @@
 import React from 'react';
-import '../css/social-bar.css'
+import '../css/Footer.css'
 
 const 
   pub = process.env.PUBLIC_URL,
@@ -9,10 +9,11 @@ const
     itch: 'https://icarusgg.itch.io/',
     youtube: 'https://www.youtube.com/channel/UCoNB91kdKkvFBR41lYRMNYw?view_as=subscriber',
     instagram: 'https://www.instagram.com/icarusggwp/',
-    twitter: 'https://twitter.com/icarusggwp'
+    twitter: 'https://twitter.com/icarusggwp',
+    github: 'https://github.com/icarus-gg'
   }
 
-const SocialIcons = () => {
+const Footer = () => {
 
   const joinDiscord = () => {
     window.open(`${links.discord}`)
@@ -25,8 +26,12 @@ const SocialIcons = () => {
         className="join-discord clickable"
         onClick={() => joinDiscord() }
       >
+        <div>
         <img src={iggLogo} className="img-igg" alt="join our discord" />
+        </div>
+        <div>
         <p>join our discord</p>
+        </div>
       </div>
 
       <ul class="">
@@ -59,9 +64,19 @@ const SocialIcons = () => {
           <i class="fab fa-twitter"></i>
           </a>
         </li>
+
+        <li>
+          <a class="github" href={`${links.github}`} target="_blank">
+          <i class="fab fa-github-square"></i>
+          </a>
+        </li>
       </ul>
+
+      <p>Unity C# Assets | Game and Software development.</p>
+
     </div>
+
   )
 }
 
-export default SocialIcons;
+export default Footer;

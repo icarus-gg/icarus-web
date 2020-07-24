@@ -1,7 +1,7 @@
 import React from 'react'
 import './css/App.css'
 
-import SocialIcons from './components/SocialIcons'
+import Footer from './components/Footer'
 
 const 
   pub = process.env.PUBLIC_URL,
@@ -25,7 +25,7 @@ function App() {
       <hr />
 
       <div className="centered">
-        <SocialIcons />
+        <Footer />
       </div>
 
     </div>
