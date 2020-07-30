@@ -12,14 +12,23 @@ const
   }
 
 function App() {
+
+  const onHeaderClick = () => {
+    window.open( 'https://discord.gg/XB6mepj' )
+  }
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={pngLogo} className="App-logo" alt="logo" />
-        <p>
-          hello friend
-        </p>
-        
+        <div 
+          onClick ={ () => onHeaderClick() }
+          className="btn-header clickable"
+        >
+          <img src={pngLogo} className="App-logo" alt="logo" />
+          <p>
+            hello friend
+          </p>
+        </div>
       </header>
 
       <hr />

@@ -72,7 +72,7 @@ const Footer = () => {
         </li>
       </ul>
 
-      <p>Unity C# Assets | Game and Software development.</p>
+      <p>Indie Game Dev</p>
 
     </div>
 
