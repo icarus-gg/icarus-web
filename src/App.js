@@ -14,7 +14,7 @@ const
 function App() {
 
   const onHeaderClick = () => {
-    window.open( 'https://discord.gg/XB6mepj' )
+    //window.open( 'https://discord.gg/XB6mepj' )
   }
 
   return (

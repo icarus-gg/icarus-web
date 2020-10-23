@@ -22,7 +22,7 @@ const Footer = () => {
   return (
     <div class="social-bar social">
 
-      <div 
+      {/* <div 
         className="join-discord clickable"
         onClick={() => joinDiscord() }
       >
@@ -70,7 +70,7 @@ const Footer = () => {
           <i class="fab fa-github-square"></i>
           </a>
         </li>
-      </ul>
+      </ul> */}
 
       <p>Indie Game Dev</p>
 
