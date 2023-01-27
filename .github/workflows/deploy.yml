@@ -16,6 +16,7 @@ jobs:
 
           script: |
             cd /webroot/icarus-web/
+            whoami
             git pull
             yarn
             yarn build
