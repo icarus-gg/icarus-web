@@ -15,7 +15,8 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
-            su - nodejs
+            export NVM_DIR=/home/nodejs/.nvm
+            source /home/nodejs/.nvm/nvm.sh
             cd /webroot/icarus-web/
             git pull
             yarn
