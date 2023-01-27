@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 
+import './css/App.css'
 import './index.css'
 import * as serviceWorker from './serviceWorker'
 import { 
@@ -8,13 +9,14 @@ import {
   createBrowserRouter 
 } from 'react-router-dom'
 
+import Root from './routes/Root'
 import Home from './components/Home'
 import PrivacyPolicy from './components/PrivacyPolicy'
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Root />,
     children: [
       {
         path: "privacy-policy",
