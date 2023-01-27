@@ -1,7 +1,6 @@
 import React from 'react'
-import './css/App.css'
 
-import Footer from './components/Footer'
+import Footer from './Footer'
 
 const 
   pub = process.env.PUBLIC_URL,
@@ -11,12 +10,11 @@ const
     discord: `${icon}/discord.png` 
   }
 
-function App() {
+const onHeaderClick = () => {
+  window.open( 'https://discord.gg/XB6mepj' )
+}
 
-  const onHeaderClick = () => {
-    //window.open( 'https://discord.gg/XB6mepj' )
-  }
-
+const Home = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -39,6 +37,6 @@ function App() {
 
     </div>
   )
-} 
+}
 
-export default App
+export default Home

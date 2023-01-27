@@ -20,7 +20,7 @@ const Footer = () => {
   }
 
   return (
-    <div class="social-bar social">
+    <div className="social-bar social">
 
       {/* <div 
         className="join-discord clickable"
@@ -32,16 +32,16 @@ const Footer = () => {
         <div>
         <p>join our discord</p>
         </div>
-      </div>
+      </div> */}
 
-      <ul class="">
+      <ul className="">
         <li>
-          <a class="discord" href={`${links.discord}`} target="_blank">
-          <i class="fab fa-discord"></i>
+          <a className="discord" href={`${links.discord}`} target="_blank">
+          <i className="fab fa-discord"></i>
           </a>
         </li>
 
-        <li>
+        {/* <li>
           <a class="itch.io" href={`${links.itch}`} target="_blank">
           <i class="fab fa-itch-io"></i>
           </a>
@@ -69,8 +69,8 @@ const Footer = () => {
           <a class="github" href={`${links.github}`} target="_blank">
           <i class="fab fa-github-square"></i>
           </a>
-        </li>
-      </ul> */}
+        </li> */}
+      </ul>
 
       <p>Indie Game Dev</p>
 
