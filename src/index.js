@@ -19,10 +19,14 @@ const router = createBrowserRouter([
     element: <Root />,
     children: [
       {
-        path: "privacy-policy",
-        element: <PrivacyPolicy />
+        path: "/",
+        element: <Home />
       }
     ]
+  },
+  {
+    path: "privacy-policy",
+    element: <PrivacyPolicy />
   }
 ])
 

@@ -1,7 +1,5 @@
 import React from 'react'
 
-import Footer from './Footer'
-
 const 
   pub = process.env.PUBLIC_URL,
   icon = `${pub}/social-icons`,
@@ -28,12 +26,6 @@ const Home = () => {
           </p>
         </div>
       </header>
-
-      <hr />
-
-      <div className="centered">
-        <Footer />
-      </div>
 
     </div>
   )
