@@ -15,8 +15,8 @@ jobs:
           username: ${{secrets.SSH_USERNAME}}
 
           script: |
+            su - nodejs
             cd /webroot/icarus-web/
-            whoami
             git pull
             yarn
             yarn build
