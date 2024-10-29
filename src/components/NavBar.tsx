@@ -12,7 +12,7 @@ const NavBar = () => {
   // Example navigation items - you can modify these
   const navItems = [
     { label: 'home', href: '/' },
-    { label: 'daedalus', href: '/dashboard' },
+    { label: 'daedalus', href: 'https://daedalus.icarus.gg' },
     // { label: 'Aliro1', href: '/about' },
     // { label: 'GitHub', href: 'https://github.com', external: true },
   ]
