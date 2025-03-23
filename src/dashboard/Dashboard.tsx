@@ -9,8 +9,8 @@ export default function Dashboard() {
     <AppTheme>
       <CssBaseline enableColorScheme />
       <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-        <CenteredImageLayout />
         <GameCard />
+        <CenteredImageLayout />
       </Box>
     </AppTheme>
   )

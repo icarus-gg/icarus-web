@@ -5,7 +5,7 @@ const CenteredImageLayout = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
 
   return (
-    <Box sx={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', bgcolor: 'background.default' }}>
+    <Box sx={{ display: 'flex', flexDirection: 'column', bgcolor: 'background.default' }}>
       <Container
         component="main"
         sx={{
