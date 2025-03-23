@@ -1,21 +1,31 @@
-import React from 'react'
-import { Box, Typography, Card, CardContent, Grid } from '@mui/material'
+import { Typography, Card, CardContent } from '@mui/material'
+import Grid from '@mui/material/Grid2'
 
 const updates = [
   {
-    title: 'Alpha Build Released',
-    date: '2024-03-01',
-    description: 'The first alpha build of Aliro1 is now available for testing. Explore the initial world and mechanics!',
+    title: 'Aliro1: power or air',
+    date: '2025-03-23',
+    description: `Went through pilot training recently, between our Thoren and Machine Gun Turret capabilities, we may yet survive.`,
   },
   {
-    title: 'New Enemy AI System',
-    date: '2024-02-15',
-    description: 'Implemented a new AI system for enemies, making them more dynamic and challenging.',
+    title: 'Development Update',
+    date: '2025-03-21',
+    description: `Managed to get a decent core up for the enemy AI patrol & chase system... had to re-rig / update the Thoren mk2 design in order for skeletal meshes and animations to be able to update without flipping too many tables. Things are looking good.`,
   },
   {
-    title: 'Environment Design Complete',
-    date: '2024-01-30',
-    description: 'Finished designing the main environments for the game. Check out the screenshots!',
+    title: 'Aliro1: turbulence accumilated',
+    date: '2025-03-14',
+    description: `Our engineer has upgraded our defensive capabilities, we've been in the field for days "testing".`,
+  },
+  {
+    title: 'Development Update',
+    date: '2025-03-07',
+    description: 'Implemented a functional Tower Defense building! it shoots...',
+  },
+  {
+    title: 'Aliro1: apocalypse realised',
+    date: '2025-03-01',
+    description: `Our previous planet made us realize there is no end to a means... We have travelled for centuries and have come up with the same results. Thoren's mk2 designs have been completed, and there is only progress in our horizon.`,
   },
 ]
 
@@ -23,7 +33,7 @@ const DevelopmentUpdates = () => {
   return (
     <Grid container spacing={4}>
       {updates.map((update, index) => (
-        <Grid item xs={12} md={6} key={index}>
+        <Grid size={{xs:12, md:6 }} key={index}>
           <Card
             sx={{
               backgroundColor: '#1a1a1a',
