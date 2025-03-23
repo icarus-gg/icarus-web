@@ -1,27 +1,16 @@
 import CssBaseline from '@mui/material/CssBaseline'
 import Box from '@mui/material/Box'
 import AppTheme from '../shared-theme/AppTheme'
-import {
-  chartsCustomizations,
-  dataGridCustomizations,
-  datePickersCustomizations,
-  treeViewCustomizations,
-} from './theme/customizations'
 import CenteredImageLayout from '../components/CenteredImgLayout'
+import GameCard from '../components/GameCard'
 
-const xThemeComponents = {
-  ...chartsCustomizations,
-  ...dataGridCustomizations,
-  ...datePickersCustomizations,
-  ...treeViewCustomizations,
-}
-
-export default function Dashboard(props: { disableCustomTheme?: boolean }) {
+export default function Dashboard() {
   return (
-    <AppTheme {...props} themeComponents={xThemeComponents}>
+    <AppTheme>
       <CssBaseline enableColorScheme />
-      <Box sx={{ display: 'flex' }}>
+      <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
         <CenteredImageLayout />
+        <GameCard />
       </Box>
     </AppTheme>
   )
